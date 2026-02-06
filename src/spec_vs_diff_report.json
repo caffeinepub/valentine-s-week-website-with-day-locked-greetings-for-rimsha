@@ -1,0 +1,29 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-06T16:56:33.912Z",
+  "summary": "REQ-8 appears implemented: the anniversary date input in AnniversaryGate no longer shows a placeholder example, and there is no helper/hint text shown beneath the input in the provided diff. Validation still calls validateAnniversaryDate from the existing lib file.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Updated/added documentation/state summary content not requested by the BuildRequest (frontend-file-summaries.txt).",
+      "reason": "BuildRequest only asked to remove example/hint text from the AnniversaryGate UI; it did not request updating repository summary text files.",
+      "evidence": [
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Updated project state metadata (project_state.json) unrelated to removing hint/example text.",
+      "reason": "BuildRequest did not request changes to project_state.json; only UI text removal in AnniversaryGate was in scope.",
+      "evidence": [
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/AnniversaryGate.tsx",
+    "project_state.json"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove anniversary date example/hint text from access gate UI",
+  "requirements": [
+    {
+      "id": "REQ-8",
+      "summary": "Remove anniversary date placeholder/example and any date-format hint/helper text from the AnniversaryGate UI while keeping validation logic unchanged.",
+      "acceptanceCriteria": [
+        "In frontend/src/components/AnniversaryGate.tsx, the anniversary date <Input> no longer displays a placeholder containing an example date (e.g., remove the current \"e.g., 13 June 2020\").",
+        "The helper/hint text below the input (currently describing the date format) is removed so the UI provides no date-entry hints.",
+        "No user-facing text within the AnniversaryGate UI contains the expected anniversary date string or any sample anniversary date.",
+        "The gate validation behavior remains unchanged (it still validates against the expected date in frontend/src/lib/anniversaryGate.ts)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AnniversaryGate.tsx",
+          "operation": "modify",
+          "description": "Remove the anniversary date Input placeholder and delete the helper/hint text paragraph so no sample date or formatting guidance is shown. Keep existing submit/validation behavior intact (still calling validateAnniversaryDate). Use the shadcn-ui Input component without placeholder/hints; verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

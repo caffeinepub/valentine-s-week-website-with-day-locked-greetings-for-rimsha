@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Build a Valentine's Week greeting website for Rimsha with daily greetings that remain locked until their specific day and then unlock automatically, plus an anniversary-date prompt gate that only allows access when the correct date (13 June 2020) is entered.",
+  "architectural_notes": [
+    "Ensure any date examples shown in UI 'date' columns are neutral placeholders (no real personal/relationship data); keep the actual gate validation date (13 June 2020) internal to the access check.",
+    "Anniversary-date access gate UI should not show any example/placeholder date hint; only validate internally against the correct date."
+  ],
+  "known_issues": [],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-website-experience-for-valentine-s-week-that-is-personalized-for-the-user-s-girlfriend-rimsha-and-presents-one-greeting-per-day",
+      "title": "Create a single-page website experience for Valentine’s Week that is personalized for the user’s girlfriend Rimsha and presents one greeting per day.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-date-based-locking-so-each-day-s-greeting-remains-locked-until-its-scheduled-calendar-day-then-unlocks-automatically-and-reveals-only-that-day-s-greeting-content",
+      "title": "Implement date-based locking so each day’s greeting remains locked until its scheduled calendar day, then unlocks automatically and reveals only that day’s greeting content.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-provide-a-clear-schedule-definition-for-valentine-s-week-days-and-their-corresponding-dates-and-use-it-consistently-throughout-the-ui-labels-unlock-dates-and-ordering",
+      "title": "Provide a clear schedule definition for Valentine’s Week days and their corresponding dates, and use it consistently throughout the UI (labels, unlock dates, and ordering).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-romantic-visual-theme-across-the-site-colors-typography-spacing-and-card-styles-suitable-for-a-valentine-s-week-greeting-website-avoiding-a-generic-default-template-look",
+      "title": "Apply a coherent romantic visual theme across the site (colors, typography, spacing, and card styles) suitable for a Valentine’s Week greeting website, avoiding a generic default template look.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-static-image-assets-and-use-them-in-the-ui-to-support-the-theme-served-from-frontend-public-assets-generated-referenced-directly-by-the-frontend",
+      "title": "Add generated static image assets and use them in the UI to support the theme (served from frontend/public/assets/generated, referenced directly by the frontend).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-on-every-page-load-show-an-anniversary-date-access-gate-that-blocks-the-valentine-s-week-interface-until-the-user-enters-the-correct-anniversary-date-13-june-2020",
+      "title": "On every page load, show an anniversary-date access gate that blocks the Valentine’s Week interface until the user enters the correct anniversary date: \"13 June 2020\".",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-valentine-s-week-day-card-date-display-the-date-column-shown-under-each-day-title-so-it-does-not-use-any-real-personal-relationship-specific-date-content-use-a-neutral-non-personal-placeholder-format-consistently-across-all-days-e-g-month-day-only-without-a-year-while-keeping-the-actual-unlocking-logic-based-on-unlockdate-unchanged",
+      "title": "Update the Valentine’s Week day card \"date\" display (the date column shown under each day title) so it does not use any real/personal/relationship-specific date content; use a neutral, non-personal placeholder format consistently across all days (e.g., month + day only, without a year), while keeping the actual unlocking logic based on `unlockDate` unchanged.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-any-example-or-hint-text-for-the-anniversary-date-from-the-anniversarygate-ui-so-the-gate-does-not-display-a-sample-date-or-formatting-guidance-text",
+      "title": "Remove any example or hint text for the anniversary date from the AnniversaryGate UI so the gate does not display a sample date or formatting guidance text.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a Valentine's Week greeting website with per-day greetings that stay locked until their scheduled day, then unlock to reveal the correct message for Rimsha.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add an anniversary-date access gate on site open: prompt for the anniversary date and only show the interface if the user enters 13 June 2020.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Avoid using real personal/relationship details in the date column; use a neutral/placeholder example date format instead of the 'real passion' date.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Remove any example/hint text for the anniversary date from the access gate UI (do not display an example date).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Valentine’s Week website with day-locked greetings for Rimsha",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

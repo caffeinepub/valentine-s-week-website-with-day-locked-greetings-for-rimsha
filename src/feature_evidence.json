@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-remove-any-example-or-hint-text-for-the-anniversary-date-from-the-anniversarygate-ui-so-the-gate-does-not-display-a-sample-date-or-formatting-guidance-text",
+      "featureTitle": "Remove any example or hint text for the anniversary date from the AnniversaryGate UI so the gate does not display a sample date or formatting guidance text.",
+      "files": [
+        "frontend/src/components/AnniversaryGate.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,2 +1,3 @@
-# valentine-s-week-website-with-day-locked-greetings-for-rimsha
-Exported from Caffeine project: Valentine’s Week website with day-locked greetings for Rimsha
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`
