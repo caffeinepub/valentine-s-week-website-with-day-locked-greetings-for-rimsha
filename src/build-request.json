@@ -1,36 +1,34 @@
 {
   "kind": "build_request",
-  "title": "Remove anniversary date example/hint text from access gate UI",
+  "title": "Add an apology note to the first day’s greeting only",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-8",
-      "text": "Remove any example or hint text for the anniversary date from the AnniversaryGate UI so the gate does not display a sample date or formatting guidance text.",
+      "id": "REQ-10",
+      "text": "Update the Valentine’s Week schedule so that only the first day (Rose Day / id: \"rose-day\") includes an additional apology note in the unlocked greeting message. The apology note text must be in English and must express: \"sorry for all the mistakes I have done before and I'll try to improve myself\". No other day’s greeting message should include this apology note.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-4"
+          "msg-8"
         ],
         "quotes": [
-          "Don't give example for the anniversary date"
+          "Also add a sorry note for all the mistakes I have done before and I'll try to improve myself.\n\n\nAdd this note on the first day only"
         ]
       },
       "acceptanceCriteria": [
-        "In frontend/src/components/AnniversaryGate.tsx, the anniversary date <Input> no longer displays a placeholder containing an example date (e.g., remove the current \"e.g., 13 June 2020\").",
-        "The helper/hint text below the input (currently describing the date format) is removed so the UI provides no date-entry hints.",
-        "No user-facing text within the AnniversaryGate UI contains the expected anniversary date string or any sample anniversary date.",
-        "The gate validation behavior remains unchanged (it still validates against the expected date in frontend/src/lib/anniversaryGate.ts)."
+        "When Rose Day is unlocked, its displayed message includes the added apology note (in English) in addition to the existing Rose Day message.",
+        "When any other day (Propose Day through Valentine’s Day) is unlocked, its displayed message remains unchanged and does not include the apology note.",
+        "The change is implemented via the schedule data (frontend/src/lib/valentinesSchedule.ts) so the UI (frontend/src/components/ValentineDayCard.tsx) renders it automatically without additional conditional UI logic."
       ]
     }
   ],
   "constraints": [
     "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
-    "Backend must remain single-actor; no additional backend services."
+    "Do not change date-locking/unlock logic (unlocking must continue to be driven by each day’s existing unlockDate)."
   ],
   "nonGoals": [
-    "Changing the expected anniversary date value used for validation.",
-    "Changing date normalization/validation rules beyond removing UI examples/hints.",
-    "Adding backend persistence or user accounts beyond existing Internet Identity support."
+    "Do not add new days/cards or change the schedule ordering.",
+    "Do not modify the anniversary gate behavior or validation date."
   ],
   "imageRequirements": {
     "required": [],

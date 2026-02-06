@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-06T16:56:33.915Z",
+  "generatedAt": "2026-02-06T18:10:03.878Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,14 +11,14 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-8",
-        "summary": "Remove any example or hint text for the anniversary date from the AnniversaryGate UI so the gate does not display a sample date or formatting guidance text.",
+        "id": "REQ-10",
+        "summary": "Update the Valentine’s Week schedule so that only the first day (Rose Day / id: \"rose-day\") includes an additional apology note in the unlocked greeting message. The apology note text must be in English and must express: \"sorry for all the mistakes I have done before and I'll try to improve myself\". No other day’s greeting message should include this apology note.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/AnniversaryGate.tsx"
+          "frontend/src/lib/valentinesSchedule.ts"
         ],
         "matchedFiles": [
-          "frontend/src/components/AnniversaryGate.tsx"
+          "frontend/src/lib/valentinesSchedule.ts"
         ]
       }
     ]
@@ -28,7 +28,7 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/components/AnniversaryGate.tsx",
+    "frontend/src/lib/valentinesSchedule.ts",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

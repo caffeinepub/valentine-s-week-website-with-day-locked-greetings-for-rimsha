@@ -1,13 +1,14 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 9,
-  "summary": "Build a Valentine's Week greeting website for Rimsha with daily greetings that remain locked until their specific day and then unlock automatically, plus an anniversary-date prompt gate that only allows access when the correct date (13 June 2020) is entered.",
+  "projectStateVersion": 13,
+  "summary": "Build a Valentine's Week greeting website for Rimsha with daily greetings that remain locked until their specific day and then unlock automatically, plus an anniversary-date prompt gate that only allows access when the correct date (13 June 2021) is entered.",
   "architectural_notes": [
     "Ensure any date examples shown in UI 'date' columns are neutral placeholders (no real personal/relationship data); keep the actual gate validation date (13 June 2020) internal to the access check.",
-    "Anniversary-date access gate UI should not show any example/placeholder date hint; only validate internally against the correct date."
+    "Anniversary-date access gate UI should not show any example/placeholder date hint; only validate internally against the correct date.",
+    "Update internal access gate validation date to 13 June 2021 while still avoiding any UI hints/placeholders that reveal the correct date."
   ],
   "known_issues": [],
-  "isFixRequest": true,
+  "isFixRequest": false,
   "existing_features": [
     {
       "id": "feature-create-a-single-page-website-experience-for-valentine-s-week-that-is-personalized-for-the-user-s-girlfriend-rimsha-and-presents-one-greeting-per-day",
@@ -72,6 +73,22 @@
         "REQ-8"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-change-the-anniversary-date-access-gate-validation-so-the-only-accepted-anniversary-date-is-13-june-2021-instead-of-13-june-2020",
+      "title": "Change the anniversary-date access gate validation so the only accepted anniversary date is \"13 June 2021\" (instead of \"13 June 2020\").",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-valentine-s-week-schedule-so-that-only-the-first-day-rose-day-id-rose-day-includes-an-additional-apology-note-in-the-unlocked-greeting-message-the-apology-note-text-must-be-in-english-and-must-express-sorry-for-all-the-mistakes-i-have-done-before-and-i-ll-try-to-improve-myself-no-other-day-s-greeting-message-should-include-this-apology-note",
+      "title": "Update the Valentine’s Week schedule so that only the first day (Rose Day / id: \"rose-day\") includes an additional apology note in the unlocked greeting message. The apology note text must be in English and must express: \"sorry for all the mistakes I have done before and I'll try to improve myself\". No other day’s greeting message should include this apology note.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -96,6 +113,18 @@
     {
       "id": "AR-4",
       "summary": "Remove any example/hint text for the anniversary date from the access gate UI (do not display an example date).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Change the anniversary-date access gate validation date from 13 June 2020 to 13 June 2021.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add a short apology/sorry note ('sorry for all the mistakes I have done before and I'll try to improve myself') to the first day’s greeting only.",
       "reqIds": [],
       "status": "pending"
     }

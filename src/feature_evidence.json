@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-remove-any-example-or-hint-text-for-the-anniversary-date-from-the-anniversarygate-ui-so-the-gate-does-not-display-a-sample-date-or-formatting-guidance-text",
-      "featureTitle": "Remove any example or hint text for the anniversary date from the AnniversaryGate UI so the gate does not display a sample date or formatting guidance text.",
+      "featureId": "feature-update-the-valentine-s-week-schedule-so-that-only-the-first-day-rose-day-id-rose-day-includes-an-additional-apology-note-in-the-unlocked-greeting-message-the-apology-note-text-must-be-in-english-and-must-express-sorry-for-all-the-mistakes-i-have-done-before-and-i-ll-try-to-improve-myself-no-other-day-s-greeting-message-should-include-this-apology-note",
+      "featureTitle": "Update the Valentine’s Week schedule so that only the first day (Rose Day / id: \"rose-day\") includes an additional apology note in the unlocked greeting message. The apology note text must be in English and must express: \"sorry for all the mistakes I have done before and I'll try to improve myself\". No other day’s greeting message should include this apology note.",
       "files": [
-        "frontend/src/components/AnniversaryGate.tsx"
+        "frontend/src/lib/valentinesSchedule.ts"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-8"
+        "REQ-10"
       ],
       "confidence": "high"
     }

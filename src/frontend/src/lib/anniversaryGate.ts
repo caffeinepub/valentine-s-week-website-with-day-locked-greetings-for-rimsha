@@ -1,6 +1,6 @@
 // Anniversary gate utilities
 
-export const EXPECTED_ANNIVERSARY_DATE = "13 June 2020";
+export const EXPECTED_ANNIVERSARY_DATE = "13 June 2021";
 
 /**
  * Normalize user input for comparison

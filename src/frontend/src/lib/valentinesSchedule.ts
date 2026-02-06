@@ -13,7 +13,7 @@ export const valentinesSchedule: ValentineDay[] = [
     name: 'Rose Day',
     date: 'February 7',
     unlockDate: new Date('2026-02-07T00:00:00'),
-    message: 'Rimsha, like a rose blooms with beauty and grace, you bring color and fragrance to my life. Every moment with you is as precious as the petals of the most beautiful rose. Happy Rose Day, my love!',
+    message: 'Rimsha, like a rose blooms with beauty and grace, you bring color and fragrance to my life. Every moment with you is as precious as the petals of the most beautiful rose. Happy Rose Day, my love!\n\nI\'m sorry for all the mistakes I have done before and I\'ll try to improve myself.',
     iconIndex: 0
   },
   {

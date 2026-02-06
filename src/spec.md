@@ -1,11 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Remove any anniversary date example/format hint text from the access gate UI while keeping validation behavior unchanged.
+**Goal:** Add an English apology note to the unlocked greeting message for Rose Day only.
 
 **Planned changes:**
-- Remove the anniversary date input placeholder example text in `frontend/src/components/AnniversaryGate.tsx`.
-- Remove any helper/hint text under the input that describes the date format.
-- Ensure no other user-facing text in the AnniversaryGate UI includes an expected date string or sample date.
+- Update the Rose Day (id: "rose-day") message in `frontend/src/lib/valentinesSchedule.ts` to append the apology note: "sorry for all the mistakes I have done before and I'll try to improve myself".
+- Ensure no other day’s message text is changed so the UI continues to render messages directly from the schedule data without additional conditional logic.
 
-**User-visible outcome:** The access gate no longer shows a sample anniversary date or formatting guidance; users only see the input field and can still enter a date that is validated as before.
+**User-visible outcome:** When Rose Day is unlocked, its greeting includes the added apology note; all other days’ unlocked greetings remain exactly the same as before.

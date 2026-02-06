@@ -1,11 +1,11 @@
 {
   "frontend/src/App.tsx": "Main application component that conditionally renders either the AnniversaryGate or the full Valentine's Week interface based on access state, which resets on page reload.",
   "frontend/src/components/ValentineDayCard.tsx": "Reusable card component that displays each Valentine's day with lock/unlock states, date badges, and reveals messages only when unlocked based on the schedule.",
-  "frontend/src/lib/valentinesSchedule.ts": "Centralized schedule definition containing all 8 Valentine's Week days with their names, neutral placeholder dates (month + day only, no year), unlock times, personalized messages for Rimsha, and icon indices.",
+  "frontend/src/lib/valentinesSchedule.ts": "Centralized schedule definition containing all 8 Valentine's Week days with their names, neutral placeholder dates (month + day only, no year), unlock times, personalized messages for Rimsha, and icon indices; Rose Day now includes an apology note appended to its message.",
   "frontend/src/lib/dateLocking.ts": "Helper functions to determine if a day is unlocked based on current date and to format unlock labels for display.",
   "frontend/src/index.css": "Global styles with a romantic OKLCH color palette (warm pinks and soft tones), custom utilities for romantic theme, and typography using Georgia for display text.",
   "frontend/tailwind.config.js": "Tailwind configuration extended with romantic color token and custom design system matching the Valentine's theme.",
   "frontend/src/hooks/useQueries.ts": "Empty placeholder file as all functionality is client-side and the backend has no methods to call.",
-  "frontend/src/lib/anniversaryGate.ts": "Utility functions for validating and normalizing the anniversary date input, with a single source of truth for the expected date string.",
+  "frontend/src/lib/anniversaryGate.ts": "Utility functions for validating and normalizing the anniversary date input, with the expected date now set to \"13 June 2021\" (case/whitespace-insensitive validation).",
   "frontend/src/components/AnniversaryGate.tsx": "Full-screen access gate component that prompts for the anniversary date with a romantic UI, validates input without providing any date format hints or examples, shows error messages for incorrect dates, and calls onSuccess callback when correct."
 }
